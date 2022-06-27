@@ -14,7 +14,7 @@ SwiftUI + Combine
 ## Unit tests
 ⌘U
 
-What to improve:
+## What to improve:
 - add pagination
 
 ## Video

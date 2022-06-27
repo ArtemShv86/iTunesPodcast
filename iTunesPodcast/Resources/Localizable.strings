@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  iTunesPodcast
+
+  Created by Artem - Home on 27.06.2022.
+  
+*/
+
+"loading.text" = "Loading";
+"podcasts.navigationTitle" = "Podcasts";
+"details.navigationTitle" = "Details";
+"podcasts.noResults.text" = "No Results";
+"podcasts.error.text" = "Error";

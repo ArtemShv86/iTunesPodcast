@@ -13,6 +13,7 @@ SwiftUI + Combine
 
 ## Unit tests
 ⌘U
+80% covered
 
 ## What to improve:
 - add pagination

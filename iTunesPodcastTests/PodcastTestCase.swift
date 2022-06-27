@@ -15,7 +15,7 @@ class PodcastTestCase : XCTestCase {
             id: randomInt,
             artistName: randomString,
             trackName: randomString,
-            releaseDate: randomString,
+            releaseDate: Date(),
             artworkUrl: randomString
         )
     }

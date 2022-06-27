@@ -25,9 +25,11 @@ class PodcastAPIClient : PodcastAPIClientProtocol {
             return Fail(error: NSError(domain: "Missing URL", code: -10001, userInfo: nil))
                 .eraseToAnyPublisher()
         }
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
         return urlSession.dataTaskPublisher(for: url)
             .map { $0.data }
-            .decode(type: PodcastResponse.self, decoder: JSONDecoder())
+            .decode(type: PodcastResponse.self, decoder: decoder)
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }

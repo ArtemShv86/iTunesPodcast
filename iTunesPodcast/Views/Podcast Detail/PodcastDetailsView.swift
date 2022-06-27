@@ -19,7 +19,7 @@ struct PodcastDetailsView : View {
                     .font(.headline)
                 Text(podcast.trackName)
                     .font(.subheadline)
-                Text(podcast.releaseDate)
+                Text(podcast.releaseDate, style: .date)
                     .font(.subheadline)
             }
         }

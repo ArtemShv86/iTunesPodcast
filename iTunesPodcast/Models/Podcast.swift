@@ -11,7 +11,7 @@ struct Podcast : Identifiable, Equatable, Codable {
     let id: Int
     let artistName: String
     let trackName: String
-    let releaseDate: String
+    let releaseDate: Date
     let artworkUrl: String
     
     private enum CodingKeys: String, CodingKey {

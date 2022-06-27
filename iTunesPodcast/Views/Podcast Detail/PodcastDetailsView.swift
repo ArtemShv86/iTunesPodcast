@@ -12,17 +12,21 @@ struct PodcastDetailsView : View {
 
     var body: some View {
         ScrollView(.vertical) {
-            VStack(alignment: .center) {
+            VStack(alignment: .center, spacing: 10) {
                 PodcastImage(imageURL: podcast.artworkUrl)
                     .frame(width: 100, height: 100)
                 Text(podcast.artistName)
                     .font(.headline)
+                    .multilineTextAlignment(.center)
                 Text(podcast.trackName)
                     .font(.subheadline)
+                    .multilineTextAlignment(.center)
                 Text(podcast.releaseDate, style: .date)
                     .font(.subheadline)
             }
+
         }
+        .padding()
         .navigationTitle(localizedString("details.navigationTitle"))
     }
 

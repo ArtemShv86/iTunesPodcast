@@ -38,12 +38,13 @@ struct PodcastRowView : View {
             HStack {
                 PodcastImage(imageURL: podcast.artworkUrl)
                     .frame(width: 100, height: 100)
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 5) {
                     Text(podcast.artistName)
                         .font(.headline)
                     Text(podcast.trackName)
                         .font(.subheadline)
                 }
+                .padding()
             }
         }
     }

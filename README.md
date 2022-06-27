@@ -4,6 +4,8 @@
 ## Installation
 ```bash
 $ git clone https://github.com/ArtemShv86/iTunesPodcast.git
+$ cd iTunesPodcast/
+$ open iTunesPodcast.xcodeproj 
 ```
 
 ## Tools
